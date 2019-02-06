@@ -1,0 +1,74 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133745471-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-133745471-1');
+    </script>
+
+      <meta charset="utf-8">
+      <title>Blackjack</title>
+          <meta name="Jackson Miller" content="">
+          <meta name="BlackJack using the Bitcoin lighitng network" content="">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="/css/styles.css" rel="stylesheet">
+        </head>
+
+        <body>
+            <h1  class="heading"> 
+            <img id="payWith" src="paywith.png">
+            <div id="headerText">Lightning Blackjack</div></h1>
+
+            <h3 id="fundsHeader">Funds: <span id="funds"></span> </h3>    
+
+
+         <h2>Dealer Hand</h2>
+
+        <div id="dealerHand">
+           <img id="dealerCard0" class='card' src="/cards/blue_back.png">
+            <img id="dealerCard1" class='card' src="/cards/blue_back.png">
+    </div>
+
+            <h2 id="playerHandHeading">Player Hand</h2>
+    <div id="playerHands">
+        <div id="dummyCards">
+        <img class='card' src="/cards/blue_back.png">
+        <img  class='card' src="/cards/blue_back.png">
+            </div>
+    </div>
+
+    <div id='bankNav'>   
+        <button class="link_button" onclick="newGame()">Deal</button>
+        <input placeholder="# of satoshis to bet" class='bankinput' type='text' id='bValue'>
+
+        <button class="link_button" onclick="deposit()">Deposit</button>
+
+        <input placeholder="# of satoshis to deposit" class='bankinput' type='text' id='dValue'>
+
+         <button class="link_button" onclick="withdraw()">Withdrawl</button>
+        <input placeholder="Enter a Lightning invoice" class='bankinput' type='text' id='wValue'>
+
+        </div>
+
+
+
+
+        <div id="deposit">
+            <div id="depositImg"></div>
+        <span id="depositText"></span>
+        </div>
+        <span id="serverMessage"></span>
+
+        </body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="/script.js"></script>
+    </html>
+
+
